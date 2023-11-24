@@ -1,0 +1,27 @@
+{
+  "name": "firefox-altclose",
+  "version": "1.0.0",
+  "description": "Alt+num switches the tab in linux but alt+w isn't valid (use ctrl+w) for closing tab. Why not make extension for it.",
+  "scripts": {
+    "test": "jsonlint --quiet *.json src/*.json && eslint . && web-ext lint --warnings-as-errors --no-input=true --source-dir src",
+    "build": "web-ext build --overwrite-dest --no-input=true --source-dir src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akhilstaar/firefox-altclose.git"
+  },
+  "author": "Akhilstaar",
+  "contributors": [
+    "Jizzy Str <jizzystr@gmail.com>"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akhilstaar/firefox-altclose/issues"
+  },
+  "homepage": "https://github.com/Akhilstaar/firefox-altclose#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "jsonlint": "^1.6.3",
+    "web-ext": "^4.1.0"
+  }
+}

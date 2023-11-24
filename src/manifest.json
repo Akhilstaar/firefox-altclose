@@ -1,0 +1,20 @@
+{
+  "author": "Jizzy Str <jizzystr@gmail.com>",
+  "manifest_version": 2,
+  "name": "Close Tab Extension",
+  "version": "1.0",
+  "description": "Closes the active tab with Alt+W",
+  "permissions": ["tabs"],
+  "background": {
+    "scripts": ["ctrlalt.js"],
+    "persistent": false
+  },
+  "commands": {
+    "closeTab": {
+      "suggested_key": {
+        "default": "Alt+W"
+      },
+      "description": "Close the active tab"
+    }
+  }
+}
